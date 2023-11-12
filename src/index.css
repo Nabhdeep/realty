@@ -1,0 +1,471 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 12px;
+   
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+/* 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; */
+}
+
+
+body{
+  color: black;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body::-webkit-scrollbar{
+  width:0.25rem;
+}
+body::-webkit-scrollbar-track{
+  background-color: #797474;
+}
+body::-webkit-scrollbar-thumb{
+  background: #494db8;
+}
+.header{
+  display: flex;
+  top: 0;
+  left: 0;
+  background-color: #0c0c0c;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 10%;
+  z-index: 100;
+}
+
+.navbar a{
+  font-size: 1.15em;
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+}
+.brandLogo{
+  font-size: 2rem;
+}
+.menubutton{
+  position: absolute;
+  right: 7%;
+  color: white;
+  cursor: pointer;
+  font-size: 2.5rem;
+  display: none;
+}
+
+.hero{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  justify-items: stretch;
+  width: 100%;
+}
+.videoLogo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.videoBg{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;            
+}
+.heroLogo {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.heroLogo img {
+  width: 150px; /* Adjust the width of the logos as needed */
+  margin:20px
+}
+.heroLogo button{
+  height: 80px;
+  width: 250px;
+  margin: 20px;
+  background-color: #0c0c0c;
+  border-width: 0.3rem;
+  border-color: #aa0404;
+  color: #aa0404;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: 'Press Start 2P';
+}
+.assetsContainer{
+  margin: 16px;
+  font-family: 'Press Start 2P';
+}
+.assetsContainer h1{
+  font-size: 72px;
+  font-weight: 700;
+}
+.assetsContainer h1{
+  grid-area: top;
+}
+.assetsContent{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  width: 100%;
+}
+.assetsContent p{
+  font-size: 25px;
+
+}
+.assetsText{
+  width: 30%;
+}
+.assetsVideo{
+width: 100%;
+overflow: hidden;
+}
+.assetsVideo video {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire area without distorting its aspect ratio */
+}
+.assetsContent button{
+  height: 80px;
+  width: 300px;
+  margin: 20px;
+  background-color: #0c0c0c;
+  border-width: 0.3rem;
+  border-color: #aa0404;
+  color: #aa0404;
+  cursor: pointer;
+  font-family: 'Press Start 2P';
+}
+.envContainer{
+  margin: 16px;
+  font-family: 'Press Start 2P';
+}
+.envContainer h1{
+  text-align: right;
+  font-size: 60px;
+}
+.envContent{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.envText{
+  font-size: 30px;
+  width: 50%;
+}
+.envVideo{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.envVideo button{
+  position: static;
+  right: 1120px;
+  height: 80px;
+  width: 300px;
+  margin: 20px;
+  background-color: #0c0c0c;
+  border-width: 0.3rem;
+  border-color: #aa0404;
+  color: #aa0404;
+  cursor: pointer;
+  font-family: 'Press Start 2P';
+}
+.footer{
+  background-color: #0c0c0c;
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.social{
+  padding-top: 25px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.blank{
+  display: flex;
+  background-color: gray;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P';
+}
+.blank p{
+color: white;
+}
+.gm{
+  width: 100px; /* Adjust the width of the logos as needed */
+
+}
+.socialInner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.studio{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P';
+  gap: 20px;
+  justify-items: center
+}
+.studio p{
+  color: white;
+}
+.archContainer{
+  background-color: orangered;
+  font-size: 20px;
+  position: relative;
+  font-family: 'Press Start 2P';
+}
+.archContainer p{
+  padding-top: 10px;
+}
+.backDrop{
+  object-fit: contain;
+}
+.backDrop h1{
+  z-index: 0;
+  color: #797474;
+  position: absolute;
+  font-size: 200px;
+  bottom: 10px;  
+}
+.archContent{
+display: flex;
+position: relative;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+.archText{
+width: 30%;
+display: grid;
+justify-content: end;
+text-align: right;
+gap: 200px;
+}
+.archText button{
+  position: static;
+  right: 1120px;
+  height: 80px;
+  width: 300px;
+  margin: 20px;
+  background-color: #0c0c0c;
+  border-width: 0.3rem;
+  border-color: #aa0404;
+  color: #aa0404;
+  cursor: pointer;
+  font-family: 'Press Start 2P';
+}
+.archImage{
+  object-fit: contain;
+  width: 70%;
+}
+.archImage img{
+  width: 100%;
+  height: 100%;
+}
+.archContainer{
+  margin: 16px;
+}
+
+/* BREAKPONTS */
+@media (max-width:850px) {
+  .header{
+    padding: 1.3rem 7%; 
+  }
+}
+@media (max-width:2134px) {
+  .assetsContent p{
+    font-size: 15px;
+  }
+  .envContainer h1{
+    font-size: 40px;
+  }
+  .envContent p{
+    font-size: 15px;
+  }
+  .envVideo video{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover
+  }
+  .envVideo button{
+    height: 80px;
+    width: 200px;
+    margin: 20px;
+  }
+  .archContainer p{
+    font-size: 13px;
+  }
+  .backDrop h1{
+    font-size: 100px;
+    bottom: 10px;  
+  }
+  .archText h1{
+    font-size: 20px;
+  }
+  .archText button{
+    height: 80px;
+    width: 240px;
+    gap:100px
+  }
+  .studio p {
+    font-size: 15px;
+}
+}
+@media (max-width: 786px) {
+  .menubutton{
+    display: inline-flex;
+  }
+  .navbar{
+    position: absolute;
+    top:7%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0,0, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0,0, 0.1);
+    z-index: 999;
+  }
+  .navbar a{
+    display: block;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  .navbar-close{
+    display: none;
+  }
+  .hero{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .videoLogo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .videoBg{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;            
+  }
+  .heroLogo {
+    z-index: 1;
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    grid-template-rows: 100px;
+    grid-gap: 1rem;
+  }
+  
+  .heroLogo img {
+    width: 100px; /* Adjust the width of the logos as needed */
+    margin:10px
+  }
+  .heroLogo button{
+    height: 70px;
+    width: 160px;
+    margin: 13px;
+  }
+  .assetsContent button{
+    height: 50px;
+    width: 160px;
+    margin:10px;
+  }
+  .assetsContainer h1{
+    font-size: 52px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  .assetsVideo video {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover; /* Ensure the video covers the entire area without distorting its aspect ratio */
+  }
+  .assetsContent p{
+    font-size: 10px;
+  }
+  .envContainer h1{
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .envContent p{
+    font-size: 10px;
+  }
+  .envVideo video{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover
+  }
+  .envVideo button{
+    right: 300px;
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+    font-size: 8px;
+  }
+  .backDrop h1{
+    font-size: 50px;
+    bottom: 10px;  
+  }
+  .archText{
+    gap:90px;
+  }
+  .archText button {
+    height: 50px;
+    width: 90px;
+    font-size: 9px;
+  }
+  .archText h1{
+    font-size: 13px;
+  }
+  .studio p {
+    font-size: 8px;
+}
+}
