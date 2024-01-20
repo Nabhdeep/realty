@@ -1,5 +1,6 @@
 import React from 'react'
-import { Unreal } from '../assets'
+import { Close_Shot_Car_Turntable } from '../assets/index'
+import { Link } from 'react-router-dom'
 
 const Assets = () => {
   return (
@@ -10,15 +11,17 @@ const Assets = () => {
                 <p>
                 WE SPECIALIZE IN CREATING GAME-READY ASSETS FOR SEAMLESS PRODUCTIO
                 </p>
+                <Link to='/assets'>
                 <button>
                     ASSETS
                 </button>
+                </Link>
                 <p>
                 ELEVATE YOUR PROJECT WITH OUR METICULOUSLY CRAFTED RESOURCES.
                 </p>
             </div>
             <div className="assetsVideo">
-                <video src={Unreal} autoPlay muted loop/>
+                <video src={Close_Shot_Car_Turntable} autoPlay muted loop/>
             </div>
         </div>
     </div>

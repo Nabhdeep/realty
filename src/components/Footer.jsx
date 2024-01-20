@@ -1,6 +1,6 @@
 import React from 'react'
 import { socialMedia } from '../constants'
-import { Centerlogo, gameLogo } from '../assets'
+import { Leftlogo, gameLogo } from '../assets/index'
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className='studio'>
             <p>@2023 D-317, Barra-8 Kanpur , Uttar Pradech, BHARAT</p>
-            <img src={Centerlogo} alt='sudio' />
+            <img src={Leftlogo} alt='sudio' />
         </div>
     </div>
   )

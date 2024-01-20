@@ -1,5 +1,6 @@
 import React from 'react'
-import { Unreal , enviorn } from '../assets'
+import { arcZ } from '../assets/index'
+import { Link } from 'react-router-dom'
 
 const Archviz = () =>  {
     return (
@@ -16,13 +17,15 @@ const Archviz = () =>  {
         </div>
           <div className='archContent'>
               <div className="archText">
+                <Link to='/arc'>
               <button>
               ARCHVIZ
                   </button>
+                  </Link>
               <h1>ARCHVIZ</h1>
               </div>
               <div className="archImage">
-                <img src={enviorn} />
+                <img src={arcZ} />
               </div>
           </div>
       </div>

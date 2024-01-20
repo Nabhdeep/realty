@@ -1,6 +1,7 @@
 import React, { useState , useEffect } from 'react'
 import { navLinks } from '../constants'
-import { reactLogo } from '../assets'
+import { CompanyLogoNoBG } from '../assets/index'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   const [toggle, setToggle] = useState(true)
   const handleMenuClick = () => {
@@ -17,7 +18,9 @@ const Navbar = () => {
   console.log(toggle)
   return (
     <div className='header'>
-      <img className='brandLogo'src={reactLogo} />
+      <Link to='/'>
+      <img className='brandLogo'src={CompanyLogoNoBG}/>
+      </Link>
       <nav className={toggle?'navbar':'navbar-close'}>
         {navLinks.map(element=>{
           return (<a href={element.id}> {element.title}</a>)

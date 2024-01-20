@@ -1,7 +1,11 @@
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
-import {Navbar , Hero, Assets, Environments , Archviz , Footer} from './components/index.js'
+import {Navbar ,Home, Footer, AssetsPage, Environments, Contact} from './components/index.js'
+import { Routes , Route } from 'react-router-dom'
+import EnvironmentsPage from './components/EnvironmentsPage.jsx'
+import ArchPage from './components/ArchPage.jsx'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -9,10 +13,14 @@ function App() {
   <>
   <div className='appMain'>
   <Navbar />
-    <Hero />
-    <Assets />
-    <Environments />
-    <Archviz />
+  <Routes>
+    <Route path='/' element={<Home />} />
+    <Route path='/games' element = {<h1>Games</h1>} />
+    <Route path='/assets' element={<AssetsPage />} />
+    <Route path='/environments' element={<EnvironmentsPage />} />
+    <Route path='/arc' element={<ArchPage />} />
+    <Route path='/contact' element={<Contact />} />
+  </Routes>
   <Footer />
     </div>
   </>

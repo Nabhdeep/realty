@@ -1,5 +1,6 @@
 import React from 'react'
-import { Unreal } from '../assets'
+import {enviorn } from '../assets/index'
+import { Link } from 'react-router-dom'
 
 const Environments = () => {
     return (
@@ -7,10 +8,13 @@ const Environments = () => {
           <h1>EMMERSIVE ENVIRONMENTS</h1>
           <div className='envContent'>
             <div className="envVideo">
-                  <video src={Unreal} autoPlay muted loop/>
+              <img src={enviorn}></img>
+                  {/* <video src={Unreal} autoPlay muted loop/> */}
+                  <Link to='/environments'>
                   <button>
                       ENVIRONMENTS
                   </button>
+                  </Link>
               </div>
               <div className="envText">
                   <p>

@@ -1,4 +1,4 @@
-import { gameLogo , instagram , youtube } from "../assets";
+import { gameLogo , instagram , youtube } from '../assets/index';
 
 export const navLinks = [
     {
@@ -10,7 +10,7 @@ export const navLinks = [
       title: "Assets",
     },
     {
-      id: "enviroments",
+      id: "environments",
       title: "Environments",
     },
     {

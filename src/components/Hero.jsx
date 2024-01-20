@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stunning , Centerlogo , Leftlogo } from '../assets'
+import { Stunning , Centerlogo , Leftlogo } from '../assets/index'
 
 const Hero = () => {
   return (
