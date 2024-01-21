@@ -365,10 +365,109 @@ gap: 200px;
   width: 320px;
 }
 
+.contactPage{
+  display: flex;
+  height: 100vh;
+  padding: 30px;
+  background-color: #0c0c0c;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactItems{
+    display: grid;
+    min-height: 300px;
+    height: auto;
+    width: 300px;
+    background-color: rgb(240, 243, 243);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 5px 10px 10px #bbb8b8;
+    gap: 10px;
+}
+textarea{
+  min-height: 100px; /* Adjusted default minimum height */
+  width: 100%; /* Take up the full width of the container */
+  padding: 10px; /* Added padding for better readability */
+  border: 1px solid #ccc; /* Border for separation */
+  border-radius: 8px;
+  resize: vertical;
+  font-family: 'Arial', sans-serif;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.contactItems button{
+    display: inline-block;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #79b7e0; /* Blue color for the button */
+    color: #fff; /* White text color */
+    transition: background-color 0.7s ease;
+}
+.contactItems button:hover{
+  background-color: #0756a0;
+}
+.contactContainer {
+  text-align: left;
+  padding: 20px;
+}
+.contactContainer h1{
+    font-size: 72px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.contactContainer p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.emailLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #3498db; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.emailLink:hover {
+  color: #2077c8; 
+}
+  
 /* BREAKPONTS */
 @media (max-width:850px) {
   .header{
     padding: 1.3rem 7%; 
+  }
+  .contactPage{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+  }
+  .contactContainer{
+    padding: 10px;
+  }
+  .contactContainer h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  .contactContainer p{
+    margin: 0px;
+    font-size: 15px;
+  }
+  .contactItems{
+    width: 200px;
   }
 }
 @media (max-width:2134px) {
