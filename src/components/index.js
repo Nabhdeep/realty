@@ -7,7 +7,9 @@ import Footer from './Footer.jsx';
 import Home from './Home.jsx';
 import AssetsPage from './AssetsPage.jsx';
 import Contact from './Contact.jsx';
+import AboutPage from './AboutPage.jsx'
 export{
+  AboutPage,
   Contact,
   AssetsPage,
   Home,

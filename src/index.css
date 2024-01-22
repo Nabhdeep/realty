@@ -443,6 +443,62 @@ input {
 .emailLink:hover {
   color: #2077c8; 
 }
+.customerPage{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.customerPage h1{
+  font-size: 50px;
+}
+.cardArea{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 0 0 calc(33.33% - 10px);
+  display: grid;
+  box-sizing: border-box; 
+  margin: 5px; 
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: #9d9999;
+}
+.card h2{
+  font-size: 25px;
+}
+.card p{
+  color: #797575;
+  font-size: 15px;
+}
+.card img{
+  height: 100px;
+  width: 100px;
+}
+.aboutPage{
+  display: flex;
+  height: 100vh;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.aboutPage h1{
+  font-size: 72px;
+}
+.aboutPage p{
+  font-size: 20px;
+  color: #797575;
+}
+.aboutPageRight img{
+  height: 700px;
+}
+.aboutPageLeft{
+  width: 30%;
+}
   
 /* BREAKPONTS */
 @media (max-width:850px) {
@@ -468,6 +524,23 @@ input {
   }
   .contactItems{
     width: 200px;
+  }
+  .customerPage{
+    height: 100%;
+  }
+  .cardArea{
+    display: grid;
+  }
+  .aboutPage{
+    display: grid;
+    height: 100%;
+  }
+  .aboutPageRight img{
+    height: 300px;
+    place-items: center;
+  }
+  .aboutPageLeft{
+    width: 100%;
   }
 }
 @media (max-width:2134px) {

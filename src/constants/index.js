@@ -1,4 +1,4 @@
-import { gameLogo , instagram , youtube } from '../assets/index';
+import { gameLogo , instagram , youtube , Centerlogo } from '../assets/index';
 
 export const navLinks = [
     {
@@ -31,7 +31,25 @@ export const navLinks = [
     },
   ];
 
-
+export const clientsList = [
+  {
+      client:'Client1',
+      img: Centerlogo,
+      desc: 'o,rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+  },{
+      client:'Client2',
+      img: Centerlogo,
+      desc: 'orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+  },{
+      client:'Client3',
+      img: Centerlogo,
+      desc: 'orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+  },{
+      client:'Client4',
+      img: Centerlogo,
+      desc: 'orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+  }
+]
 
   export const socialMedia = [
     {
